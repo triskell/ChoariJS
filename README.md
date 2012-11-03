@@ -12,14 +12,14 @@ In case of problem, please report it at https://github.com/triskell/ChoariJS.
 
 #Use of ChoariJS
 
-Download the zip file. It contains :
+Download the repository. It contains :
 
-*choari-X.Y.Z.js : the ChoariJS library with full code and exlanations. Where X.Y.Z is the library's version. To use during developpement.
+* **choari-X.Y.Z.js :** the ChoariJS library with full code and exlanations. Where X.Y.Z is the library's version. To use during developpement.
 
-*choari-X.Y.Z.min.js : the minified ChoariJS library. Where X.Y.Z is the library's version. It takes less space, but there is no explanations. To use during production.
+* **choari-X.Y.Z.min.js :** the minified ChoariJS library. Where X.Y.Z is the library's version. It takes less space, but there is no explanations. To use during production.
 
-*LICENSE : The GNU General Public License of this software. To read before downloading and using ChoariJS.
+* **LICENSE :** The GNU General Public License of this software. To read before downloading and using ChoariJS.
 
-*README.md : This file. To read before using ChoariJS
+* **README.md :** This file. To read before using ChoariJS
 
-*demo/ : a ChoariJS's demonstrations forlder. Look at it if you want some basic samples.
+* **demo/ :** a ChoariJS's demonstrations forlder. Look at it if you want some basic samples.
