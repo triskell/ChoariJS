@@ -3,14 +3,14 @@
 ChoariJS is a javascript game library.
 It is still in developpement early days. So, it will contains bugs and problems. Please, help us and report it at https://github.com/triskell/ChoariJS.
 
-#Warnings
+##Warnings
 
 This software is under GNU General Public License. Please read the LICENSE before downloading and using  it.
 By downloading it, you agree the GNU General Public License terms (Contained in the LICENSE file).
 
 In case of problem, please report it at https://github.com/triskell/ChoariJS.
 
-#Use of ChoariJS
+##Use of ChoariJS
 
 Download the repository. It contains :
 
