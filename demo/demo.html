@@ -29,15 +29,44 @@
 <html>
 	<head>
 		<title>PlayJS - demo 1</title>
-		<script src="../choari.js"></script>
+		<script src="../choari-0.1.0.js"></script>
 	</head>
 	<body>
-	<canvas id="gamecanvas">Can not display canvas</canvas>
-	<script>
+	
+		<script>
+		var posX = 0;
+		
 		window.onload = function () {
-			var c = document.getElementById("gamecanvas")
-			game.init(c, "fullscreen");
+			var c = document.getElementById("gamecanvas");
+			game.initCanvas(c, "2d");
 		}
-	</script>
+		
+		
+		function startGame(){
+			game.update = function () {
+				posX++;
+				if (posX > 500) posX=0 ;
+			};
+		
+			game.render = function (bufferedCanvas) {
+				var ctx = bufferedCanvas.getContext("2d");
+				
+				//clear canvas
+				ctx.fillStyle = "rgb(64,64,64)";
+				ctx.fillRect(0,0,game.getCanvasWidth(), game.getCanvasHeight());
+				
+				//draw on canvas
+				ctx.fillStyle = "rgb(0,128,0)";
+				ctx.fillRect (posX,50,300,200);
+			};
+		
+			game.setFullScreen(document.getElementById('gamecanvas'),true);
+			game.start();
+		}
+		</script>
+		
+		<button onClick="startGame();">Start game !</button>
+		<canvas id="gamecanvas">Can not display canvas</canvas>
+
 	</body>
 </html>
