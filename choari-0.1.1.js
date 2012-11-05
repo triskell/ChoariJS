@@ -150,7 +150,10 @@ var game = {
 		this.dbCanvas = document.createElement("canvas");
 		this.dbCanvas.setAttribute("width", this.canvas.width);
 		this.dbCanvas.setAttribute("height", this.canvas.height);
-		this.gameLoopInterval = setInterval(function () { game.run();}, 1000 / this.fps);
+		if (this.gameLoopInterval === null) {
+			this.gameLoopInterval = setInterval(function () { game.run();}, 1000 / this.fps);
+		}
+		
 	},
 	
 	/**********
@@ -174,6 +177,7 @@ var game = {
 	 **********/
 	stop : function () {
 		clearInterval(this.gameLoopInterval);
+		this.gameLoopInterval = null;
 	},
 	
 	/**********
