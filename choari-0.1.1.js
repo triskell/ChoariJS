@@ -163,7 +163,6 @@ var game = {
 	 **********/
 	run : function () {
 		
-		//TODO : those functions are not functions ??? (WTF?)
 		this.update();
 		this.render(this.dbCanvas);
 		this.display();
